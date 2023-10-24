@@ -178,7 +178,7 @@ export const socialIcons = [
   },
   {
     id: 4,
-    href: "/",
+    href: "https://drive.google.com/file/d/1qnL7vtdvdsHcSKZieXjh_PprwoJ1wP4d/view?usp=sharing",
     title: "Resume",
     icon: BsFillPersonLinesFill,
     bgColor: "bg-light-grey",
