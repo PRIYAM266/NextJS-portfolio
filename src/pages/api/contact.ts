@@ -24,7 +24,7 @@ export default async function (
     });
     const mailData = {
       from: "priyam.266gupta@outlook.com",
-      to: process.env.EMAIL_TO,
+      to: "priyam.g266@gmail.com",
       subject: `Message From ${req.body.name}`,
       text: req.body.message + " | Sent from: " + req.body.email,
       html: `<div>${req.body.message}</div><p>Sent from:
