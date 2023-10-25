@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 // Purpose: To store data for project
-export const data = [
+export const projectData = [
   {
     id: 1,
     name: "Pricewise",

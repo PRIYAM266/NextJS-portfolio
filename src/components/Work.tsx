@@ -1,11 +1,7 @@
 import React from "react";
-import { data } from "@/data";
-import Image from "next/image";
+import { projectData } from "@/data";
 
 const Work = () => {
-  // projects file
-  const project = data;
-
   return (
     <section
       id={"work"}
@@ -26,7 +22,7 @@ const Work = () => {
         {/* container for projects */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Gird Item */}
-          {project.map((item, index) => (
+          {projectData.map((item, index) => (
             <div
               key={index}
               style={{ backgroundImage: `url(${item.img})` }}
