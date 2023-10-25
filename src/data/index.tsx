@@ -192,7 +192,7 @@ export const mobileMenuItems = [
   },
 ];
 
-export const socialIcons = [
+export const socialLinks = [
   {
     id: 1,
     href: "https://www.linkedin.com/in/priyam-3a6a18172/",

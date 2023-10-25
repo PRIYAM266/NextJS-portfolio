@@ -1,10 +1,10 @@
-import { socialIcons } from "@/data";
+import { socialLinks } from "@/data";
 
 const SocialMenu = () => {
   return (
     <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
       <ul>
-        {socialIcons.map((item) => (
+        {socialLinks.map((item) => (
           <li
             key={item.id}
             className={`w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ${item.bgColor}`}
