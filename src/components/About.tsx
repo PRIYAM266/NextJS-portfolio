@@ -4,6 +4,7 @@ import { aboutSummary } from "@/data";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import Button from "./Button";
 
 const About = () => {
   const router = useRouter();
@@ -37,15 +38,7 @@ const About = () => {
           <div>
             <p>{aboutSummary}</p>
             <div>
-              <button
-                className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600"
-                onClick={handleClick}
-              >
-                Contact Me
-                <span className="group-hover:rotate-90 duration-300">
-                  <HiArrowNarrowRight className="ml-3 " />
-                </span>
-              </button>
+              <Button handleClick={handleClick} title={"Contact Me"} />
             </div>
           </div>
         </div>

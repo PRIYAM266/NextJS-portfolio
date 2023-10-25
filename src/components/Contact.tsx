@@ -120,7 +120,8 @@ const Contact = () => {
           type="submit"
           className={
             !sendingMessage
-              ? "text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center"
+              ? `transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+               text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center`
               : "text-white border-2 bg-pink-600 border-pink-600 px-4 py-3 my-8 mx-auto flex items-center"
           }
           onClick={() => setSendingMessage(true)}
