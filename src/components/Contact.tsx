@@ -7,6 +7,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [sendingMessage, setSendingMessage] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -45,6 +46,7 @@ const Contact = () => {
         setEmail("");
         setMessage("");
         setSubmitted(false);
+        setSendingMessage(false);
       }
     });
   };
@@ -109,9 +111,16 @@ const Contact = () => {
           </p>
         )}
 
+        {!sendingMessage ? null : (
+          <p className="text-pink-600">
+            *Sending message, now. Thanks for contacting!
+          </p>
+        )}
+
         <button
           type="submit"
           className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center"
+          onClick={() => setSendingMessage(true)}
         >
           Let's Collaborate
         </button>
