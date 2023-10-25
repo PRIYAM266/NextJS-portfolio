@@ -1,4 +1,4 @@
-import { menuItems } from "@/data";
+import { mobileMenuItems } from "@/data";
 import Link from "next/link";
 
 type MobileMenuProps = {
@@ -8,7 +8,7 @@ type MobileMenuProps = {
 const MobileMenu = ({ handleClick }: MobileMenuProps) => {
   return (
     <>
-      {menuItems.map((item) => (
+      {mobileMenuItems.map((item) => (
         <li key={item.id} className="py-6 text-4xl">
           <Link
             onClick={handleClick}

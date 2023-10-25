@@ -154,6 +154,44 @@ export const menuItems = [
   },
 ];
 
+export const mobileMenuItems = [
+  {
+    id: 1,
+    href: "#about",
+    title: "About",
+  },
+  {
+    id: 2,
+    href: "#skills",
+    title: "Skills",
+  },
+  {
+    id: 3,
+    href: "#work",
+    title: "Work",
+  },
+  {
+    id: 4,
+    href: "#contact",
+    title: "Contact",
+  },
+  {
+    id: 5,
+    href: "https://drive.google.com/file/d/1qnL7vtdvdsHcSKZieXjh_PprwoJ1wP4d/view?usp=sharing",
+    title: "Resume",
+  },
+  {
+    id: 6,
+    href: "https://www.linkedin.com/in/priyam-3a6a18172/",
+    title: "Linkedin",
+  },
+  {
+    id: 7,
+    href: "https://github.com/PRIYAM266",
+    title: "Github",
+  },
+];
+
 export const socialIcons = [
   {
     id: 1,
