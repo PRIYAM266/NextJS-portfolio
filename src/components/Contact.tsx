@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import LoadingSymbol from "./LoadingSymbol";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -112,17 +113,20 @@ const Contact = () => {
         )}
 
         {!sendingMessage ? null : (
-          <p className="text-pink-600">
-            *Sending message, now. Thanks for contacting!
-          </p>
+          <p className="text-pink-600">*Thanks for contacting!</p>
         )}
 
         <button
           type="submit"
-          className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center"
+          className={
+            !sendingMessage
+              ? "text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center"
+              : "text-white border-2 bg-pink-600 border-pink-600 px-4 py-3 my-8 mx-auto flex items-center"
+          }
           onClick={() => setSendingMessage(true)}
         >
-          Let's Collaborate
+          {!sendingMessage ? null : <LoadingSymbol />}
+          {!sendingMessage ? "Let's Collaborate" : "Sending Message"}
         </button>
       </form>
     </section>
